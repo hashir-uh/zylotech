@@ -22,6 +22,7 @@ class TaskViewer extends Component {
     if (isUpcoming) {
       tasks = data
         .sort((a, b) => parseInt(a.time) - parseInt(b.time))
+        .sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
         .slice(0, 3)
         .map((item, index) => {
           return <TaskViewerForm name={item.name} time={item.time} key={item.id} />;

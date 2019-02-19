@@ -28,7 +28,7 @@ const TaskViewerForm = props => {
       <Card className={classes.card}>
         <CardContent>
           <Typography variant="h5" component="h2">
-            {name} {` `} {time}
+            {name} {time}
           </Typography>
         </CardContent>
       </Card>
